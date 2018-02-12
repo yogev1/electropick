@@ -1,0 +1,84 @@
+@import "bootstrap";
+
+body {
+	padding-top: 40px;
+}
+
+.cov {  
+    background-size: cover;
+    height: 100vh;
+	background-position: center center;	
+	opacity: 1;   
+}
+
+.title-font {
+	font-family: 'Coustard', serif;
+	color: black;
+}
+
+.btn1 {
+	color: white;
+	background-color: #cc0000;
+	font-size: 130%;
+	padding: 15px 30px 15px 30px;
+}
+
+.btn1:hover {
+	opacity: 0.8;
+	color: white;
+}
+
+.generic-font {
+	font-family: 'Oswald', sans-serif;
+}
+
+.pan-sharp {
+	border-radius: 0px;
+	border: none;
+}
+
+.pan-start {
+	height: 300px;
+}
+
+/* navbar */
+
+.nav-font {
+	font-family: 'Oswald', sans-serif;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #660000;
+    font-weight: 900;
+}
+
+.navbar-brand:hover {
+	color: black;
+}
+
+.navbar-container {
+    padding: 10px 0 10px 0;
+}
+
+.navbar-nav > li {
+    font-size: 20px;
+    color: black;
+    padding: 0 20px 0 20px;    
+}
+
+.navbar-nav > li > a {
+	color: #484848; 
+    font-weight: 900;	  
+}
+    
+.navbar-nav > li > a:hover {
+	background-color: inherit;
+	color: #660000;   
+}
+
+
