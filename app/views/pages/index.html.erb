@@ -1,4 +1,4 @@
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 
 $(document).ready(
@@ -77,8 +77,23 @@ $(document).ready(
     </div>
     <div class="col-lg-2 col-md-2"></div>           
   </div>  
-</div>     
+</div>  
 
+  
+<div class="container">
+  <div class="row text-center block-center">
+    <% @items_hash.each_with_index do |item| %>
+      <div class="col-md-4 col-lg-3 col-sm-3 col-xs-6" style="margin-top: 50px; min-height: 200px">
+        <%= image_tag(item["MediumImage"]["URL"], class: "img-responsive center-block", style: "height: 150px") %>
+        <% title = @search.show_string(item["ItemAttributes"]["Title"],10) %>
+        <h5 style="height: 20px"><%= title %></h5>
+        <%= link_to "Buy Me On Amazon", item["DetailPageURL"], class: "btn btn-danger", style: "margin-top: 10px" %>
+        <h5>Price: <%= item["OfferSummary"]["LowestNewPrice"]["FormattedPrice"] %> </h5>
+        <h5>New In Stock: <%= item["OfferSummary"]["TotalNew"] %></h5>
+      </div>
+    <% end %>
+  </div>
+</div>  
 
 
 
