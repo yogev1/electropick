@@ -14,7 +14,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'httparty'
-gem 'figaro'
+gem 'figaro'  #creating environment variables
+gem 'api-ai-ruby'  #grabing response and sending data to dialogflow
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
